@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphQlApitest", "GraphQlApitest\GraphQlApitest.csproj", "{4EDF5557-EBCB-464C-B308-EB8DD742A81E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4EDF5557-EBCB-464C-B308-EB8DD742A81E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EDF5557-EBCB-464C-B308-EB8DD742A81E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EDF5557-EBCB-464C-B308-EB8DD742A81E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EDF5557-EBCB-464C-B308-EB8DD742A81E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {282BC284-C2D0-4486-A46F-C9C76405A23D}
+	EndGlobalSection
+EndGlobal
