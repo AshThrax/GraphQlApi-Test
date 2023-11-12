@@ -75,5 +75,29 @@ namespace GraphQlApitest.Models
             return response.Data.Owner;
         }
 
+        public async Task<Owner> UpdateOwner(Guid id, Ownerinput ownertoUpdate) 
+        {
+            var query = new GraphQLRequest
+            {
+                Query = @"mutation($owner: ownerInput!,ownerId: ID!){ updateOwner(owner: $owner,ownerId :$ownerId){ id,name,address} }",
+                //ajout des parametre relatif au querry
+                Variables = new { owner = ownertoUpdate, ownerId=id }
+            };
+            var response = await _client.PostAsync(query);
+            return response.GetDataFieldAs<Owner>("updateOwner");
+        }
+
+        public async Task<string> DeleteOwner(Guid id)
+        {
+            var query = new GraphQLRequest
+            {
+                Query = @" mutation ($ownerId : ID!){deleteOwner(ownerId: $OwnerId)}",
+                Variables = new {   ownerId=id  }
+
+            };
+            var response = await _client.SendMutationAsync<ResponseOwnerType>(query);
+            return response.Data.Owner;
+        }
+
     }
 }
