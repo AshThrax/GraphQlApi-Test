@@ -41,19 +41,19 @@ namespace GraphQlApitest.Models
         {
             var query = new GraphQLRequest {
                 Query = @"
-                query ownersQuery($ownerID: ID!){
+                            query ownersQuery($ownerID: ID!){
 
-                    owners(ownerId: $ownerID){
-                      id
-                      name 
-                      address 
-                      account{
-                               id 
-                               type 
-                               description 
-                             }    
-                           }    
-                        }",
+                                owners(ownerId: $ownerID){
+                                  id
+                                  name 
+                                  address 
+                                  account{
+                                           id 
+                                           type 
+                                           description 
+                                         }    
+                                       }    
+                                    }",
                 //permet d'intergrer des parametre dans le querry
                 Variables= new {ownerID=Id }
             };
@@ -83,8 +83,8 @@ namespace GraphQlApitest.Models
                 //ajout des parametre relatif au querry
                 Variables = new { owner = ownertoUpdate, ownerId=id }
             };
-            var response = await _client.PostAsync(query);
-            return response.GetDataFieldAs<Owner>("updateOwner");
+            var response = await _client.SendMutationAsync<ResponseOwnerType>(query);
+            return response.Data.Owner;
         }
 
         public async Task<string> DeleteOwner(Guid id)
@@ -96,7 +96,7 @@ namespace GraphQlApitest.Models
 
             };
             var response = await _client.SendMutationAsync<ResponseOwnerType>(query);
-            return response.Data.Owner;
+            return response.Data.Owner.ToString();
         }
 
     }
