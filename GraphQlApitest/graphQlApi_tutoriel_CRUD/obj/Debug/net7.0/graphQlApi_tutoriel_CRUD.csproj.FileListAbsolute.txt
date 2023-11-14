@@ -1,0 +1,7 @@
+C:\Users\quentin\classic web\GraphQlApi-Test\GraphQlApitest\graphQlApi_tutoriel_CRUD\obj\Debug\net7.0\graphQlApi_tutoriel_CRUD.csproj.AssemblyReference.cache
+C:\Users\quentin\classic web\GraphQlApi-Test\GraphQlApitest\graphQlApi_tutoriel_CRUD\obj\Debug\net7.0\graphQlApi_tutoriel_CRUD.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\quentin\classic web\GraphQlApi-Test\GraphQlApitest\graphQlApi_tutoriel_CRUD\obj\Debug\net7.0\graphQlApi_tutoriel_CRUD.AssemblyInfoInputs.cache
+C:\Users\quentin\classic web\GraphQlApi-Test\GraphQlApitest\graphQlApi_tutoriel_CRUD\obj\Debug\net7.0\graphQlApi_tutoriel_CRUD.AssemblyInfo.cs
+C:\Users\quentin\classic web\GraphQlApi-Test\GraphQlApitest\graphQlApi_tutoriel_CRUD\obj\Debug\net7.0\graphQlApi_tutoriel_CRUD.csproj.CoreCompileInputs.cache
+C:\Users\quentin\classic web\GraphQlApi-Test\GraphQlApitest\graphQlApi_tutoriel_CRUD\obj\Debug\net7.0\graphQlApi_tutoriel_CRUD.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\quentin\classic web\GraphQlApi-Test\GraphQlApitest\graphQlApi_tutoriel_CRUD\obj\Debug\net7.0\graphQlApi_tutoriel_CRUD.MvcApplicationPartsAssemblyInfo.cache

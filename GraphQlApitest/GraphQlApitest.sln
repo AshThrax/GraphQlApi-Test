@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphQlApitest", "GraphQlApitest\GraphQlApitest.csproj", "{4EDF5557-EBCB-464C-B308-EB8DD742A81E}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "graphQlApi_tutoriel_CRUD", "graphQlApi_tutoriel_CRUD\graphQlApi_tutoriel_CRUD.csproj", "{75C5194F-8538-4798-80B3-DF022A1AE38D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graphql_ASpNetCore_Medium_Tutoriel", "Graphql_ASpNetCore_Medium_Tutoriel\Graphql_ASpNetCore_Medium_Tutoriel.csproj", "{B28B8A22-E22B-4011-B913-CDFC8E646A80}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4EDF5557-EBCB-464C-B308-EB8DD742A81E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4EDF5557-EBCB-464C-B308-EB8DD742A81E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4EDF5557-EBCB-464C-B308-EB8DD742A81E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4EDF5557-EBCB-464C-B308-EB8DD742A81E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{75C5194F-8538-4798-80B3-DF022A1AE38D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{75C5194F-8538-4798-80B3-DF022A1AE38D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{75C5194F-8538-4798-80B3-DF022A1AE38D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{75C5194F-8538-4798-80B3-DF022A1AE38D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B28B8A22-E22B-4011-B913-CDFC8E646A80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B28B8A22-E22B-4011-B913-CDFC8E646A80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B28B8A22-E22B-4011-B913-CDFC8E646A80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B28B8A22-E22B-4011-B913-CDFC8E646A80}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

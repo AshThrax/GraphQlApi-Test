@@ -1,9 +1,10 @@
 ﻿using graphQlApi_tutoriel_CRUD.Contract;
+using graphQlApi_tutoriel_CRUD.Entities;
 using graphQlApi_tutoriel_CRUD.Entities.Context;
 
 namespace graphQlApi_tutoriel_CRUD.Repository
 {
-    public class OwnerRepository:IOwnerRepository
+    public class OwnerRepository : IOwnerRepository
     {
         private readonly ApplicationDbContext _context;
 
@@ -11,5 +12,7 @@ namespace graphQlApi_tutoriel_CRUD.Repository
         {
             _context = context;
         }
+
+        public IEnumerable<Owner> GetAll() => _context.Owners.ToList();
     }
 }
