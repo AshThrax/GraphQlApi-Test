@@ -1,4 +1,6 @@
-﻿namespace Graphql_ASpNetCore_Medium_Tutoriel.Model
+﻿using GraphQL.Types;
+
+namespace Graphql_ASpNetCore_Medium_Tutoriel.Model
 {
    public record Employee(int Id, string Name, int Age, int DeptId);
 
@@ -12,6 +14,15 @@
         public string DeptName { get; set; }
     }
 
-    public class EmployeeDetailsType: ObjectGra
+    public class EmployeeDetailsType : ObjectGraphType<EmployeeDetails>
+    {
+        public EmployeeDetailsType()
+        {
+            Field(x => x.Id);
+            Field(x => x.Name);
+            Field(x => x.Age);
+            Field(x => x.DeptName);
+        }
+    }
 
 }
