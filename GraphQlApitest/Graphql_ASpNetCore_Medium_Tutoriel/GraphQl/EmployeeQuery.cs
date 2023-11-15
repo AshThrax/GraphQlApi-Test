@@ -9,8 +9,14 @@ namespace Graphql_ASpNetCore_Medium_Tutoriel.GraphQl
     {
         public EmployeeQuery(IEmployeeService employeeService)
         {
-            Field<ListGraphType<EmployeeDetailsType>>(Name = "Employee",resolve: x => employeeService.GetEmployees());
-            Field<ListGraphType<EmployeeDetailsType>>(Name = "Employee",arguments: new QueryArguments<IntGraphType> {Name="Id" },
+            Field<ListGraphType<EmployeeDetailsType>>(
+                Name = "Employee",
+                resolve: x => employeeService.GetEmployee()
+                );
+
+            Field<ListGraphType<EmployeeDetailsType>>(
+                Name = "Employee",
+                arguments: new QueryArguments(new QueryArgument<IntGraphType> {Name="Id" }),
                 resolve: x=>employeeService.GetEmployees(x.GetArgument<int>("id"))
                 );
         }

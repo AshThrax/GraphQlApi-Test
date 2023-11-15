@@ -4,7 +4,7 @@ namespace Graphql_ASpNetCore_Medium_Tutoriel.Service
 {
     public interface IEmployeeService
     {
-        public List<EmployeeDetails> GetEmployeeDetails();
+        public List<EmployeeDetails> GetEmployee();
         public List<EmployeeDetails> GetEmployees(int EmpID);
         public List<EmployeeDetails> GetEmployeeBydepartement(int deptid);
     }
@@ -41,7 +41,7 @@ namespace Graphql_ASpNetCore_Medium_Tutoriel.Service
             }).ToList();
         }
 
-        public List<EmployeeDetails> GetEmployeeDetails()
+        public List<EmployeeDetails> GetEmployee()
         {
             return _employee.Select(emp => new EmployeeDetails 
             {
