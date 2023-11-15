@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Graphql_ASpNetCore_Medium_Tutoriel.props" />
+</Project>
